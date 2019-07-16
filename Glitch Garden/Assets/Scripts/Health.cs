@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] float health = 100;
     //[SerializeField] AudioClip deathSFX;
+    [SerializeField] GameObject deathVFX;
 
     void Start()
     {
@@ -24,7 +25,16 @@ public class Health : MonoBehaviour
         if(health <= 0)
         {
             //play death SFX
+            TriggerDeathVFX();
             Destroy(gameObject);
         }
+    }
+
+    private void TriggerDeathVFX()
+    {
+        if (!deathVFX) { return; }
+
+        GameObject deathVFXObject = Instantiate(deathVFX, transform.position, transform.rotation);
+        Destroy(deathVFXObject, 1f);
     }
 }

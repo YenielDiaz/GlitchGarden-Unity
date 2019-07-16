@@ -21,7 +21,10 @@ public class AttackerSpawner : MonoBehaviour
 
     private void SpawnAttacker()
     {
-        Instantiate(lizardPrefab, transform.position, transform.rotation);
+       Attacker newAttacker = Instantiate(lizardPrefab, transform.position,
+           transform.rotation) as Attacker;
+        //make the instantiated attackers children of the spawner
+        newAttacker.transform.parent = transform; 
     }
     void Update()
     {
