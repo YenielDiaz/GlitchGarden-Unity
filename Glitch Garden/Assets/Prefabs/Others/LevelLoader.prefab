@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8609016534293478730
+--- !u!1 &6820429374015750547
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8609016534293478731}
-  - component: {fileID: 1050786962}
+  - component: {fileID: 6820429374015750545}
+  - component: {fileID: 6820429374015750546}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: LevelLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8609016534293478731
+--- !u!4 &6820429374015750545
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8609016534293478730}
+  m_GameObject: {fileID: 6820429374015750547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 5, z: -9.839873}
+  m_LocalPosition: {x: 312.36545, y: 137.42287, z: -22.094213}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1050786962
+--- !u!114 &6820429374015750546
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8609016534293478730}
+  m_GameObject: {fileID: 6820429374015750547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51a16ec2557850840b03de2e0d4d4946, type: 3}
+  m_Script: {fileID: 11500000, guid: 26edb989fee86bd4493ae0348c6ed700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: 1
-  lizardPrefab: {fileID: 4226085224828275509, guid: 698ea65e576e93342a21fe3a173d7693,
-    type: 3}
-  minDelay: 6
-  maxDelay: 6.5
+  loadDelay: 3

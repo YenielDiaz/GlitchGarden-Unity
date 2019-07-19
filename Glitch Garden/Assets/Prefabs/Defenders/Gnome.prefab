@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1634428680425324207}
   - component: {fileID: 4962627363239057733}
   - component: {fileID: 1441393492266194947}
+  - component: {fileID: 5399399019987298110}
   m_Layer: 0
   m_Name: Gnome
   m_TagString: Untagged
@@ -139,6 +140,20 @@ MonoBehaviour:
     type: 3}
   gun: {fileID: 3309582621498477073}
   myLaneSpawner: {fileID: 0}
+--- !u!114 &5399399019987298110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6005009448143547439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32eb40e933a07b64086a0216b069d7a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathVFX: {fileID: 0}
 --- !u!1 &7409712945327395752
 GameObject:
   m_ObjectHideFlags: 0
