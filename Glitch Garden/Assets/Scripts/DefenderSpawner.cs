@@ -5,6 +5,14 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour
 {
     Defender unitToSpawn;
+    GameObject defenderParent;
+
+    const string DEFENDER_PARENT_NAME = "Defender";
+
+    private void Start()
+    {
+        CreateDefenderParent();
+    }
 
     private void OnMouseDown()
     {
@@ -55,5 +63,15 @@ public class DefenderSpawner : MonoBehaviour
     {
         Defender newDefender = Instantiate(unitToSpawn, location, 
             Quaternion.identity) as Defender;
+        newDefender.transform.parent = defenderParent.transform;
+    }
+
+    private void CreateDefenderParent()
+    {
+        defenderParent = GameObject.Find(DEFENDER_PARENT_NAME);
+        if (!defenderParent)
+        {
+            defenderParent = new GameObject(DEFENDER_PARENT_NAME);
+        }
     }
 }

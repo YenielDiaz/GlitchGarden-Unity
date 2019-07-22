@@ -11,6 +11,10 @@ public class AttackerSpawner : MonoBehaviour
 
     IEnumerator Start()
     {
+        //two ways to alter difficulty
+        maxDelay -= (PlayerPrefsController.GetDifficulty() - 1);
+        //Time.timeScale *= (PlayerPrefsController.GetDifficulty());
+
         do
         {          
             yield return new WaitForSeconds(Random.Range(minDelay, maxDelay));
